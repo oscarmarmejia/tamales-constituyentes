@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hueso"
+    tools:context="mejia.oscar.tamalapp42.AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Añadir nuevo producto."
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+
+    <Button
+        android:id="@+id/addtamalid"
+        android:layout_below="@id/slogan_category"
+        android:layout_width="match_parent"
+
+        android:layout_height="42dp"
+
+android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Añadir Tamales"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/addatoleid"
+        android:layout_below="@id/addtamalid"
+        android:layout_width="match_parent"
+
+        android:layout_height="42dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Añadir Atole"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/maintain_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+android:layout_below="@id/addatoleid"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Modificar productos"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+     android:layout_below="@id/maintain_btn"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="CHECAR ÓRDENES"
+
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_below="@id/check_orders_btn"
+    android:orientation="vertical"
+    android:id="@+id/layouttt"
+    android:background="@color/colorPrimaryDark"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+    <Switch
+        android:layout_width="125dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:textColorLink="@color/black"
+android:text="Tienda"
+        android:textSize="18dp"
+        android:layout_height="60dp"
+        android:id="@+id/switch_abrir"
+
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrado/abierto"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/switch_abrir"
+        />
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/layouttt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:hint="Mensaje arriba"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/mensaje1"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/mensaje1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:hint="Mensaje abajo"
+        android:textColorHint="@color/black"
+        android:id="@+id/mensaje2"
+        />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/admin_logout_btn"
+    android:background="@color/colorPrimaryDark"
+    android:layout_marginBottom="10dp"
+    android:textColor="@android:color/white"
+    android:text="actualizar mensajes"
+    android:id="@+id/actualizar_btn"
+
+    />
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="salir"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>

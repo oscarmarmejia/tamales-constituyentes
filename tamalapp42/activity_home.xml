@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hueso"
+    tools:context="mejia.oscar.tamalapp42.HomeActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal" />
+
+
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:id="@+id/fab"
+
+    app:srcCompat="@drawable/nav_cart"
+    android:layout_height="wrap_content"
+android:layout_margin="16dp"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="bottom|end"
+  />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
